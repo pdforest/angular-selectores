@@ -1,0 +1,62 @@
+----------
+PS C:\Lab\workspaces\workspace-angular-de-cero-a-experto\07-selectores> ng g m paises --routing
+CREATE src/app/paises/paises-routing.module.ts (249 bytes)
+CREATE src/app/paises/paises.module.ts (280 bytes)
+
+paises
+  paises.module.ts
+  paises-routing.module.ts
+
+----------
+PS C:\Lab\workspaces\workspace-angular-de-cero-a-experto\07-selectores> ng g c paises/pages/selectorPage --skip-tests
+CREATE src/app/paises/pages/selector-page/selector-page.component.html (28 bytes)
+CREATE src/app/paises/pages/selector-page/selector-page.component.ts (302 bytes)
+CREATE src/app/paises/pages/selector-page/selector-page.component.css (0 bytes)
+UPDATE src/app/paises/paises.module.ts (396 bytes)
+
+paises
+  pages
+    selsector-page.component.css
+    selsector-page.component.html
+    selsector-page.component.ts
+
+import { SelectorPageComponent } from './pages/selector-page/selector-page.component';
+@NgModule({
+  declarations: [
+    SelectorPageComponent
+  ],
+
+----------
+PS C:\Lab\workspaces\workspace-angular-de-cero-a-experto\07-selectores> ng g service paises/services/paises   
+CREATE src/app/paises/services/paises.service.spec.ts (357 bytes)
+CREATE src/app/paises/services/paises.service.ts (135 bytes)
+
+paises
+  services
+    paises-routing.module.ts
+    paises.module.ts
+
+----------
+¿Por que va en los imports?
+Porque tiene la palabra Module
+
+import { HttpClientModule } from '@angular/common/http';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+
+----------
+PS C:\Lab\workspaces\workspace-angular-de-cero-a-experto\07-selectores> ng g i paises/interfaces/paises.interface
+CREATE src/app/paises/interfaces/paises.interface.ts (38 bytes)
+
+paises
+  interfaces
+    paises.interface.ts
+
+----------
+
